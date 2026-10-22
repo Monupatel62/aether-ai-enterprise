@@ -45,7 +45,6 @@ Enterprise-specific SSO/SCIM administration (if required), enterprise policy con
 ## Research references
 
 - [Aether AI master catalog](https://github.com/Monupatel62/aether-ai-platform/blob/main/docs/REPOSITORY_CATALOG.md)
-- [WoHo AI DevKit](https://github.com/Monupatel62/woho-ai-devkit)
 - [AI DIAL Core](https://github.com/epam/ai-dial-core)
 - [AI DIAL Chat architecture](https://github.com/epam/ai-dial-chat/blob/development/docs/architecture.md)
 
