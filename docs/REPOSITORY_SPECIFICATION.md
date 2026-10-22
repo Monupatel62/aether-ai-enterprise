@@ -1,6 +1,6 @@
 # Repository specification: aether-ai-enterprise
 
-**Status:** Documentation baseline copied from the Aether AI master specification. Implementation status must be verified separately.
+**Status:** Repository exists; documentation-only on the inspected `main` branch. No application implementation is present in the audited tree.
 
 ## Mission
 
@@ -8,7 +8,7 @@ Enterprise tenant controls, SSO policy, audit export, organization administratio
 
 ## Dependencies and connections
 
-Auth principal/session contracts, security policy contracts, billing entitlement contracts, observability, and admin-facing public contracts where needed. Enterprise must not import the admin frontend or duplicate identity/session logic.
+aether-ai-auth, aether-ai-security, aether-ai-billing, and aether-ai-observability.
 
 ## Owned capabilities
 
