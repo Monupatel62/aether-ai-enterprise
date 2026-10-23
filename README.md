@@ -38,3 +38,11 @@ Documentation baseline established. This repository is not considered implemente
 - [Security review](docs/SECURITY_REVIEW.md)
 - [Engineering standard](docs/ENGINEERING_STANDARD.md)
 - [Work log](docs/WORKLOG.md)
+
+
+## Implemented code baseline
+
+- Tenant-scoped enterprise policy validator for feature entitlements, OIDC/SAML issuer URLs, SCIM HTTPS configuration, and bounded audit retention.
+- Entitlements are the intersection of purchased features, tenant policy, and plan allowances.
+- Membership/role authority remains explicitly out of scope pending the platform ADR decision.
+- Node 20/22 CI with tests and syntax checks. No SSO or SCIM network integration is enabled by this package.
