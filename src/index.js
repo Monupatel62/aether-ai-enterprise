@@ -10,6 +10,7 @@ export function validateEnterprisePolicy(policy) {
   if (features.some((feature) => typeof feature !== "string" || !FEATURES.has(feature))) errors.push("enabledFeatures contains an unsupported feature");
   if (new Set(features).size !== features.length) errors.push("enabledFeatures must not contain duplicates");
   if (policy.auditExport === true && !features.includes("auditExport")) errors.push("auditExport requires the auditExport feature entitlement");
+  if (policy.sso && !features.includes("sso")) errors.push("SSO configuration requires the sso feature entitlement");
   if (policy.sso && (!["oidc", "saml"].includes(policy.sso.protocol) || typeof policy.sso.issuer !== "string" || !isHttpsUrl(policy.sso.issuer))) errors.push("SSO requires an OIDC/SAML protocol and HTTPS issuer");
   if (policy.scim && (!features.includes("scim") || policy.scim.enabled !== true || !isHttpsUrl(policy.scim.baseUrl))) errors.push("SCIM requires entitlement, explicit enablement, and an HTTPS base URL");
   if (policy.auditRetentionDays !== undefined && (!Number.isInteger(policy.auditRetentionDays) || policy.auditRetentionDays < 30 || policy.auditRetentionDays > 3650)) errors.push("auditRetentionDays must be between 30 and 3650");
