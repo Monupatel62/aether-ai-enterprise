@@ -23,3 +23,9 @@ test("keeps membership authority decision outside this repository contract", () 
   const result = validateEnterprisePolicy({ tenantId: "tenant-1", enabledFeatures: [], membershipAuthority: "enterprise" });
   assert.ok(result.errors.some((e) => e.includes("membership authority")));
 });
+
+
+test("rejects SSO configuration without the tenant feature entitlement", () => {
+  const result = validateEnterprisePolicy({ tenantId: "tenant-1", enabledFeatures: [], sso: { protocol: "oidc", issuer: "https://identity.example.com" } });
+  assert.ok(result.errors.some((e) => e.includes("SSO configuration requires the sso feature entitlement")));
+});
