@@ -19,3 +19,9 @@ Documentation baseline established. This repository is not considered implemente
 - Version public contracts and document breaking changes.
 - Use synthetic or sanitized data in tests.
 - Update the master catalog when ownership or cross-repository contracts change.
+
+
+## Project specification
+
+- [Project specification](docs/PROJECT_SPEC.md)
+- [Repository specification](docs/REPOSITORY_SPECIFICATION.md)
