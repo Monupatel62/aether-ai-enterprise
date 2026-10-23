@@ -25,3 +25,16 @@ Documentation baseline established. This repository is not considered implemente
 
 - [Project specification](docs/PROJECT_SPEC.md)
 - [Repository specification](docs/REPOSITORY_SPECIFICATION.md)
+
+
+## Repository documents
+
+- [Project specification](docs/PROJECT_SPEC.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [Dependencies and contracts](docs/DEPENDENCIES_AND_CONTRACTS.md)
+- [Implementation plan](docs/IMPLEMENTATION_PLAN.md)
+- [Research and licenses](docs/RESEARCH_AND_LICENSES.md)
+- [Technical design](docs/TECHNICAL_DESIGN.md)
+- [Security review](docs/SECURITY_REVIEW.md)
+- [Engineering standard](docs/ENGINEERING_STANDARD.md)
+- [Work log](docs/WORKLOG.md)
